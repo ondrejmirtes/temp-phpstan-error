@@ -1,0 +1,25 @@
+{
+	"name" : "director-moav/the-kof-client",
+	"description" : "TheKofClient is a PHP client for SurveyMonkey API. Written to be intuitvly used.",
+	"type" : "git",
+	"keywords" : [
+	     "TheKofClient","SurveyMonkey","api","php"
+	],
+	"require": {
+	    "php": ">=7.2.0"
+	},
+    	"autoload": {
+		"psr-0": {
+		    "TheKof": "src/"
+		}
+	},
+	"authors" : [{
+			"name" : "Itay Moav",
+			"homepage" : "https://cookinginbinary.blog",
+			"role" : "Superman"
+		}
+	],
+	"support" : {
+		"issues" : "https://github.com/itay-moav/TheKofClient/issues"
+	}
+}

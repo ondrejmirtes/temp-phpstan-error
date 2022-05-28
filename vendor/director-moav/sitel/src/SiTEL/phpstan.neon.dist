@@ -1,0 +1,8 @@
+parameters:
+   level: 8
+   paths:
+      - src
+   bootstrapFiles:
+      - tests/phpstan-bootstrap.php
+   excludes_analyse:
+      - 'src/SiTEL/UIUtils/*'

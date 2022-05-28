@@ -1,0 +1,14 @@
+parameters:
+	level: 8
+	paths:
+	- src
+	bootstrapFiles:
+	- tests/phpstan-bootstrap.php 
+	excludePaths:
+	- 'tests/phpstan-bootstrap.php'
+	- 'src/SiTEL/DataSources/ActiveMQ/*'
+	- 'src/SiTEL/Api/Oberon/AWS.php'
+	ignoreErrors:
+	- '#call_user_func_array#'
+	- '#Redis::connect#'
+	reportUnmatchedIgnoredErrors: false

@@ -1,0 +1,19 @@
+{
+	"name" : "sitel/sitelms-core",
+	"description" : "LMS Composer ",
+	"type" : "project",
+	"require" : {
+		"php" : ">=7.4", 
+		"director-moav/the-kof-client": "^1.0",
+		"director-moav/sitel": "v3.0.2",
+		"director-moav/zimlogger": "^v1.0.0",
+		"director-moav/talis-ms": "^3.4",
+		"phpstan/phpstan": "^1.7"
+	},
+	"repositories" : [
+			{
+                        "type" : "git",
+                        "url" : "https://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@github.com/MedStarSiTEL/sitelStdlib.git"
+                	}
+	]
+}
