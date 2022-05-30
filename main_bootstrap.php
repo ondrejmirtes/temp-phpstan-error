@@ -4,7 +4,7 @@ ini_set('error_reporting', E_ALL|E_STRICT);
  * Common config values all subdomains and CLI will be using
  */
 //generic paths
-define('CORE_PATH', 	    __DIR__);//'/lms2/production/anahita');
+define('CORE_PATH', 	    __DIR__);
 define('LOG_PATH',			   '/var/log/lms2/');
 define('LIB_PATH', CORE_PATH.'/lib');
 
@@ -33,7 +33,7 @@ require_once LIB_PATH.'/commons.php';
 require_once LIB_PATH.'/commons/url.php';
 require_once LIB_PATH.'/commons/dates.php';
 require_once LIB_PATH.'/commons/feature_control.php';
-require_once '/etc/lms/environment.php';
+require_once __DIR__  . '/environments/itay_mac.php';
 
 spl_autoload_register('autoload');
 include CORE_PATH . '/vendor/autoload.php';
