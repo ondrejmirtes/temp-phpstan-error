@@ -32,6 +32,9 @@ function set_logger($log_name){
  */
 function autoload($class) {
     $file_path = str_replace(['_','\\'],'/',$class) . '.php';
+    if (!is_file($file_path)) {
+        return;
+    }
     if(!include_once $file_path){
         throw new Exception_ClassNotFound("{$file_path} {$class}");
     }
@@ -39,6 +42,9 @@ function autoload($class) {
 
 function autoloadDebug($class) {
     $file_path = str_replace(['_','\\'],'/',$class) . '.php';
+    if (!is_file($file_path)) {
+        return;
+    }
     if(!include_once $file_path){
         throw new Exception_ClassNotFound("{$file_path} {$class}");
     }
